@@ -1,0 +1,19 @@
+current directory: /home/eric/workspace/erictheprogrammerwithrails/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.10/ext/mri
+/home/eric/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160724-25612-9b3ozk.rb extconf.rb
+creating Makefile
+
+current directory: /home/eric/workspace/erictheprogrammerwithrails/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.10/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/eric/workspace/erictheprogrammerwithrails/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.10/ext/mri
+make "DESTDIR="
+compiling crypt.c
+compiling bcrypt_ext.c
+compiling wrapper.c
+compiling crypt_gensalt.c
+compiling crypt_blowfish.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/eric/workspace/erictheprogrammerwithrails/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.10/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20160724-25612-13s4i2t

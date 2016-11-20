@@ -1,0 +1,2 @@
+class VController < ApplicationController
+end

@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+/* ...
+*= require_self
+*= require_tree .
+*= require portfolio
+*/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+@font-face {
+    font-family: 'LibreBaskervilleItalic';
+    src: font-url('LibreBaskerville-Italic-webfont.eot');
+    src: font-url('LibreBaskerville-Italic-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         font-url('LibreBaskerville-Italic-webfont.woff') format('woff'),
+         font-url('LibreBaskerville-Italic-webfont.ttf') format('truetype'),
+         font-url('LibreBaskerville-Italic-webfont.svg#LibreBaskervilleItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: font-url('proximanova-bold-webfont.eot');
+    src: font-url('proximanova-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         font-url('proximanova-bold-webfont.woff') format('woff'),
+         font-url('proximanova-bold-webfont.ttf') format('truetype'),
+         font-url('proximanova-bold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novalight';
+    src: font-url('proximanova-light-webfont.eot');
+    src: font-url('proximanova-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         font-url('proximanova-light-webfont.woff') format('woff'),
+         font-url('proximanova-light-webfont.ttf') format('truetype'),
+         font-url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight:normal;
+    font-style: normal;
+
+}
+
+ul{
+  list-style-position: inside;
+}
+
+
+a{
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+
+
+.eric_navHeader{
+  background-color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: .5vh 12.5vw;
+  height: auto;
+  display:inline-block;
+  width: 100%;
+  & > h2{
+    display: inline-block;
+    margin: 0 0 0 0;
+    color: #fff;
+    font-size: 2vw;
+    float: left;
+    & > a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  & > .eric_hamburger{
+    background-color: red;
+    cursor: pointer;
+    height: 4vw;
+    width: 4vw;
+    display: inline-block;
+    float: right;
+    margin: 0 4vw 0 0;
+    display: none;
+  }
+  & > .eric_navItems{
+    display:block;
+    float: right;
+    margin: 0 0 0 0;
+    font-size: 1.35vw;
+    color: #fff;
+      & > a{
+        color: inherit;
+        font-size: inherit;
+        vertical-align: middle;
+        margin: 0 3vh 0 0;
+      }
+  }
+}
+.eric_content{
+  height: 90vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  & > .eric_sub_content{
+    margin: 0 12.5vw 0 12.5vw;
+    width: 75vw;
+  }
+}
+
+@media all and (orientation:portrait){
+  .eric_content {
+      width: 100vw;
+      margin: 0 0 0 0;
+  }
+  .eric_navHeader{
+      margin: 0;
+      padding: 2vh 0;
+   
+      & > h2{
+         font-size: 5vw;
+     }
+      & > .eric_hamburger{
+        display: inline-block;
+      }
+      & > .eric_navItems{
+        display: none;
+        width: 100vw;
+        margin: 0;
+        background-color: #e7e7e7;
+        & > a{
+          display:block;
+          margin: 0;
+	  height: 8vw;
+	  font-size: 5vw;
+	  background: black;
+        }
+      }
+  }
+}

@@ -1,0 +1,84 @@
+# Logfile created on 2016-07-17 22:23:15 -0400 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:23:15 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [69dcf8c9] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [69dcf8c9] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:23:36 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [caf4eb6d] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [caf4eb6d] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:26:12 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [50afd8e6] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [50afd8e6] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:29:30 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f964698c] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [f964698c] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:37:56 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ed0a215c] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [ed0a215c] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:40:39 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f4fbde6a] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [f4fbde6a] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:42:01 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f6c2fd05] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [f6c2fd05] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:42:26 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [adaffc2a] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [adaffc2a] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:44:03 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [521d6905] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [521d6905] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:46:18 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c80c1912] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [c80c1912] Command: [ -d ~/.rvm ]
+ DEBUG [c80c1912] Finished in 6.607 seconds with exit status 1 (failed).
+ DEBUG [c412ae02] Running [ -d /usr/local/rvm ] on 209.6.43.2
+ DEBUG [c412ae02] Command: [ -d /usr/local/rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:47:33 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b0001d6a] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [b0001d6a] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:48:54 -0400 cap production deploy:inital
+  INFO ---------------------------------------------------------------------------
+ DEBUG [25dd8efc] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [25dd8efc] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:51:21 -0400 cap production rvm:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4c99fbdb] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [4c99fbdb] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 22:55:26 -0400 cap production rvm:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [317f42b4] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [317f42b4] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-17 23:00:23 -0400 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [35a492b4] Running [ -d ~/.rvm ] on 209.6.43.2
+ DEBUG [8c5cd1be] Running [ -d ~/.rvm ] as eric@209.6.43.2
+ DEBUG [35a492b4] Command: [ -d ~/.rvm ]
+ DEBUG [8c5cd1be] Command: [ -d ~/.rvm ]
+ DEBUG [35a492b4] Finished in 7.713 seconds with exit status 1 (failed).
+ DEBUG [cc73739d] Running [ -d /usr/local/rvm ] on 209.6.43.2
+ DEBUG [cc73739d] Command: [ -d /usr/local/rvm ]

@@ -1,0 +1,60 @@
+.eric__post-container{
+  & > a{
+    margin: 2vw 0 0 0;
+    display: inline-block;
+  }
+
+  .post_detail{
+    float: left;
+    width: auto;
+    margin: 2vw 0 2vw 0;
+    padding: 0 2vw 0 2vw;
+    &:nth-of-type(1){
+      border-right: 1px solid black;
+    }
+  }
+
+  .content_post{
+    float: left;
+    width: 75vw;
+    display: block;
+    h2{
+      display: inline-block;
+      width: 100%;
+    }
+    .action{
+      padding: .5em 1em;
+      border: 1px solid #337ab7;
+      text-decoration: none;
+      margin: 1vw 0 1vw 0;
+      display: inline-block;
+      &:hover{
+        color: white;
+        background: #337ab7;
+      }
+    }
+  }
+  .eric__portpost-container{
+    display: inline-block;
+      & > .eric__gifdesk{
+        margin: 2vw 0 2vw 0;
+      }
+      & > .eric__gifphone{
+        margin: 2vw 0 2vw 0;
+        width: 20vw;
+      }
+  }
+}
+
+td, th{
+  padding: 1vw;
+  text-align: left;
+}
+
+
+textarea{
+  width: 55vw;
+  height: 55vw;
+}
+
+

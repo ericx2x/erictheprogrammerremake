@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eric the Programmer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <% if content_for?(:head) %>
+    <%= yield(:head) %>
+  <% end %>
+  <% content_for :portfolio do %>
+    <%= stylesheet_link_tag "portfolio.css" %>
+  <% end %>
+</head>
+<body>
+
+<div id="user_header" class="eric_navHeader">
+ <h2>
+   <%= link_to 'Eric the Programmer', root_path %>
+ </h2>
+ <div class="eric_hamburger"></div>
+ <div class="eric_navItems">
+   <%= link_to 'Projects', posts_path %>
+   <%= link_to 'Portfolio', portfolio_path, data: { no_turbolink: true } %>
+   <%= link_to 'Resume', resume_path, target: "_blank" %>
+   <% if current_user %>
+   Logged in as <%= current_user.email %>
+   <%#= link_to "Log Out", logout_path %>
+   <% else %>
+   <%#= link_to "Sign Up", signup_path %>
+   <%#= link_to "Log In", login_path %>
+   <% end %>
+ </div>
+</div>
+<div class="eric_content">
+  <div class="eric_sub_content">
+    <%= yield %>
+  </div>
+</div>
+<% flash.each do |key, value| %>
+ <%= content_tag(:div, class: "alert alert-#{key}") do %>
+<p><%= value %></p>
+ <% end %>
+<% end %>
+
+
+</body>
+</html>

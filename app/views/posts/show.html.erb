@@ -1,0 +1,19 @@
+<div class="eric__post-container">
+  <p class="post_detail">
+    <strong>User:</strong>
+    <%= @post.user %>
+  </p>
+  
+  <p class="post_detail">
+    <strong>Time:</strong>
+    <%= @post.created_at %> 
+  </p>
+  
+  <div class="content_post"><strong><h2><%= @post.title %></h2></strong><%= @post.content.html_safe %></div>
+  
+  <% if current_user && @post.user == current_user %>
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+  <% end %>
+  <%= link_to 'Back', posts_path %>
+
+</div>
