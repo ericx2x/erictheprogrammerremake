@@ -15,6 +15,8 @@
 *= require_self
 *= require_tree .
 *= require portfolio
+*= require owl.carousel
+*= require owl.theme
 */
 
 @import "bootstrap-sprockets";
@@ -69,6 +71,11 @@ a{
 
 nav{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  & > .eric_navwidth{
+    width: 80vw;
+    margin: 0 10vw 0 10vw;
+  }
+
 }
 
 
@@ -81,6 +88,13 @@ nav{
     width: 75vw;
   }
 }
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 @media all and (orientation:portrait){
   .eric_content {

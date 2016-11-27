@@ -16,7 +16,7 @@
 <body>
 
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container-fluid eric_navwidth">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -28,7 +28,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="<%= 'active' if params[:controller] == 'page' %>"><a href="#">Home</a></li>
+              <li class="<%= 'active' if params[:controller] == 'page' %>"><%= link_to 'Home', root_path %></li>
               <li class="<%= 'active' if params[:controller] == 'posts' %>"><%= link_to 'Projects', posts_path %></li>
               <li class="<%= 'active' if params[:controller] == 'portfolio' %>"><%= link_to 'Portfolio', portfolio_path, data: { no_turbolink: true } %></li>
               <li><%= link_to 'Resume', resume_path, target: "_blank" %></li>
