@@ -88,11 +88,35 @@ nav{
     width: 75vw;
   }
 }
-
+.owl-pagination{
+  cursor: default;
+}
 #owl-demo .item img{
     display: block;
     width: 100%;
     height: auto;
+}
+
+
+.card{
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  background-color: #fff;
+  border-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  & > a{
+    & > img{
+      height: 280px;
+      width: 100%;
+      display: block;
+    }
+  }
 }
 
 

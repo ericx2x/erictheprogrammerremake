@@ -1,5 +1,5 @@
-<h1>Listing Projects</h1>
-<table>
+<h1>Projects</h1>
+<!-- <table>
   <thead>
     <tr>
       <th>User</th>
@@ -19,8 +19,21 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
+
+
+        <div class="row">
+          <% @posts.each do |post| %>
+            <a href="<%= "posts/#{post.id}"%>">
+              <div class="card">
+                <%= image_tag(post.image) %>
+                <p class="card-text"><%= link_to truncate(strip_tags(post.content), length: 75), post %></p>
+              </div>
+            </a>
+          <% end %>
+        </div>
+
 <br>
-<% if current_user %> 
+<% if current_user %>
   <%= link_to 'New Post', new_post_path %>
 <% end %>

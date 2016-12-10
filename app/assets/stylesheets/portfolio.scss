@@ -99,7 +99,7 @@ a, span{
         -ms-transition: all 0.3s ease-out 0s;
         -o-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
-		
+
 }
 
 a,a:hover, a:active, a:focus {
@@ -109,7 +109,7 @@ a,a:hover, a:active, a:focus {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
+
 /* --- FONTS --- */
 
 .proximaBold{font-family: 'proxima_nova_rgbold','Times New Roman',Arial, Helvetica, sans-serif;}
@@ -123,7 +123,7 @@ letterSpacing120{letter-spacing:0.120em;}
 
 body.portfolio{font-family: 'LibreBaskervilleItalic', Serif; font-size:14px; letter-spacing:0.12em; text-align:center; -webkit-font-smoothing: antialiased; color: #000;}
 #main{min-width:1005px; background:asset-url("bg-redline.png") repeat-y center; background-size:1px; padding-bottom: 5vw;}
-#main>header>.logo{height:104px; width:303px; background:asset-url("logo-erictheprogrammer.png") no-repeat; background-size:303px; margin:30px auto 30px auto;}
+#main>header>.logo{height:104px; width:303px; background:asset-url("el8le-logo.png") no-repeat; background-size:303px; margin:30px auto 30px auto;}
 #main>.scroll1{ width:194px; height:90px; margin:15px auto 15px auto; padding:30px auto 30px auto; background:#FFF;}
 #main>.scroll1>.next>a{ display:block; height:30px; width:30px;  background:asset-url("down@2x.png") center bottom no-repeat; background-size:30px; margin:auto; border:solid 1px #fbabaa;}
 #main>.scroll1>.next>a:hover{background:asset-url("down@2x.png") center top no-repeat; background-size:30px; border:solid 1px #f7505a;}
@@ -253,7 +253,7 @@ iframe{ overflow:hidden;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-   
+
 
 /*
  * Image replacement
@@ -368,13 +368,13 @@ iframe{ overflow:hidden;}
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-    
-   
+
+
 @media only screen and (max-width : 1024px)  {
 
 
-        i	
-	#main>header>.logo{height:78px; width:227px; background: asset-url("logo-erictheprogrammer@2x.png") no-repeat; background-size:contain; margin:10px auto 10px auto;}
+        i
+	#main>header>.logo{height:78px; width:227px; background: asset-url("el.png") no-repeat; background-size:contain; margin:10px auto 10px auto;}
 	#main{min-width:100%;}
 	.mainWidth{width:90vw;}
 }
@@ -397,22 +397,22 @@ iframe{ overflow:hidden;}
 
 	#awwwards {display: none;}
 	#main>section>h1{font-size:45px; line-height:45px; margin:0px auto 0px auto; text-transform:uppercase;}
-	
+
 	main>header>.video>.description{width:500px; margin-top:-150px; margin-left:-250px; text-align:center;}
 	#main>header>.video>.description>h1{font-size:90px; line-height:90px; margin:0px 0px 0px 0px; letter-spacing:0.12em;}
 	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 0px 0px; letter-spacing:0.08em}
 	#main>header>.video>.description>.play{text-decoration:none; color:#FFF; display:block; height:70px; width:480px; margin:20px auto 20px auto;}
 	#main>header>.video>.description>.play>.playIco{ display:block; width:70px; height:70px; background:asset-url("play-ico.png") center no-repeat;}
 	#main>header>.video>.description>.play>.cta{ width:408px; font-size:12px;}
-	
-	
+
+
 	#main>#primarystack>.clearfix>.cul{ width:33%; margin-top:60px;}
 	#main>#primarystack>.clearfix>.cul>figure{ width:180px; height:180px; margin:auto; border-radius:50%; }
 	#main>#myportfolio>.clearfix>.cul{ width:48%; margin-top:50px; height:300px;}
 	#main>#workexperience>.clearfix>.cul{ width:50%; margin-top:50px; height:370px;}
 	#main>#myambition>.clearfix>.cul{ width:33%;}
 	#main>#myambition>h1{font-size:35px; line-height:38px;}
-	
+
 	footer { margin:0px auto 0px auto; padding-top:50px; height:400px; padding-left:0px; background:asset-url("bg-red-noise.png");}
 	footer>.cont{width:100%; margin:auto; height:auto; margin-left:0px; margin-top:0px;}
 	footer>.cont>.line, .br1{display:none;}
@@ -423,10 +423,10 @@ iframe{ overflow:hidden;}
 	footer>.cont>.social>.fb{ overflow:hidden; width:84px; padding-right:20px;}
 	footer>.cont>.social>.tw{ overflow:hidden; width:87px;  padding-right:20px;}
 	footer>.cont>.social>.g{ overflow:hidden; width:60px;}
-	
+
 	.sectionPadding{padding-top:40px; padding-bottom:30px;}
 	#main>#myambition{padding-top:40px;}
-	
+
 	#main>#myambition>.clearfix>.cul{ width:50%;}
 	#main>#myambition>.clearfix>.center{ height:f84px;}
 	#main>#myambition>.clearfix>.cul .verticalLine{ visibility:hidden; display:none;}
@@ -439,7 +439,7 @@ iframe{ overflow:hidden;}
 }
 
 @media only screen and (max-height : 750px)  {
-	#main>header>.logo{height:78px; width:227px; background:asset-url("logo-erictheprogrammer@2x.png") no-repeat; background-size:contain; margin:15px auto 15px auto;}
+	#main>header>.logo{height:78px; width:227px; background:asset-url("el8le-logo.png") no-repeat; background-size:contain; margin:15px auto 15px auto;}
 	#main>header>.video>.description{width:500px; margin-top:-150px; margin-left:-250px; text-align:center;}
 	#main>header>.video>.description>h1{font-size:90px; line-height:90px; margin:0px 0px 0px 0px; letter-spacing:0.12em;}
 	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 0px 0px; letter-spacing:0.08em}
@@ -447,17 +447,17 @@ iframe{ overflow:hidden;}
 	#main>header>.video>.description>.play>.playIco{ display:block; width:70px; height:70px; background:asset-url("play-ico.png") center no-repeat; border-right:solid 1px #f86c6f;}
 	#main>header>.video>.description>.play>.cta{ width:408px; font-size:12px;}
 
-		
+
 }
 
 
 
 @media only screen and (max-width : 650px)  {
-	
+
 /* --- GLOBAL --- */
 .mainWidth{ width:80%;}
-#main>header>.logo{height:52px; width:151px; background:asset-url("logo-erictheprogrammer@2x.png") no-repeat; background-size:contain; margin:18px auto 18px auto;}
-/* --- ! --- */	
+#main>header>.logo{height:52px; width:151px; background:asset-url("el8le-logo.png") no-repeat; background-size:contain; margin:18px auto 18px auto;}
+/* --- ! --- */
 #main>.number>div{ margin:250px auto 0px auto; width:42px; height:41px; background:asset-url("bg-numbers.png") no-repeat; font-size:12px; line-height:41px; overflow:hidden; padding-left:1px; text-align:center; color:#f7505a; }
 #main>section strong{ color:#f7505a; font-family: 'proxima_nova_rgbold','Times New Roman',Arial, Helvetica, sans-serif;}
 #main>section>h1{font-size:30px; line-height:30px; margin:0px auto 10px auto; text-transform:uppercase;}
@@ -538,7 +538,7 @@ footer>.cont>p{ width:85%; margin-left:auto; margin-right:auto;}
 }
 
 @media only screen and (max-width : 500px)  {
-	
+
 	.pagination{ visibility:hidden; display:none;}
 	footer>.cont>p>a{ color:#FFF; text-decoration:none; font-size:36px;}
 }

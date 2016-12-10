@@ -66,10 +66,10 @@ class PostsController < ApplicationController
 
     # some comment that i deleted here talking about ltrustere parameter white lsits or something
     def post_params
-      params.require(:post).permit( :title, :content)
+      params.require(:post).permit( :title, :image, :content)
     end
-  
-    
+
+
     def authorize
       if current_user.nil?
         redirect_to login_url, alert: "Not authorized! Please log in."

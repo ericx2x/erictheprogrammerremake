@@ -34,8 +34,12 @@ $(document).ready(function(){
  i=0;//The counter to fade in transeffect items in order.
  inMotion = false;
 
+$(document).on('click',".owl-pagination",function(e){
+  e.preventDefault();
+});
 
- $(window).resize(function(){ 
+
+ $(window).resize(function(){
     if(window.innerHeight < window.innerWidth){
       $('.eric_navItems').css({'display':'block'});
     } else {
@@ -55,19 +59,19 @@ $(document).ready(function(){
   });
 
   $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
+
+      navigation : false, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true
- 
+
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
+
   });
 
 });
@@ -1286,7 +1290,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($lazyImg.get(0)) || isBackgroundImg === true) {
                     showImage();
-                } else if (iterations <= 100) {//if image loads in less than 10 seconds 
+                } else if (iterations <= 100) {//if image loads in less than 10 seconds
                     window.setTimeout(checkLazyImage, 100);
                 } else {
                     showImage();
@@ -1315,7 +1319,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($currentimg.get(0))) {
                     addHeight();
-                } else if (iterations <= 100) { //if image loads in less than 10 seconds 
+                } else if (iterations <= 100) { //if image loads in less than 10 seconds
                     window.setTimeout(checkImage, 100);
                 } else {
                     base.wrapperOuter.css("height", ""); //Else remove height attribute

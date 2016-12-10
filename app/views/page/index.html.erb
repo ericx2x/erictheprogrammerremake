@@ -1,7 +1,12 @@
-<div id="owl-demo" class="owl-carousel owl-theme">
- 
-  <div class="item"><img src="http://fpoimagery.com/?w=920&h=200" alt="The Last of us"></div>
-  <div class="item"><%= image_tag('frontscreen.png') %></div>
-  <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
- 
+<a href="<%= portfolio_path %>" data-no-turbolink="true" title="Click to go to my portfolio"><div id="owl-demo" class="owl-carousel owl-theme">
+
+  <div class="item"><%= image_tag('frontscreenre.png') %></div>
+  <div class="item"><%= image_tag('slideshow2re.png') %></div>
+  <div class="item"><%= image_tag('slideshow3re.png') %></div>
+
 </div>
+</a>
+  <p>
+    Hey, I'm Eric. Welcome to my personal website. This site is for client and recruiters to take a look at who I am and what I do. You can <a data-no-turbolink="true" title="Click here to view portfolio" href="/portfolio">click here to view my portfolio</a>. Or here to check out my
+    <%= link_to 'resume', resume_path, target: "_blank" %>.
+  </p>
