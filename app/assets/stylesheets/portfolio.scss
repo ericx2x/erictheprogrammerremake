@@ -3,6 +3,7 @@
    ========================================================================== */
 
 
+
 .portfolio{
   .eric_content {
     font-size: 1em;
@@ -42,6 +43,12 @@
  * A better looking default horizontal rule
  */
 
+
+a.resume_style{
+  color: white;
+  font-size: 1.5vw;
+  margin: 1vw 0 0 0;
+}
 
 a{
   color: #f7505a;
@@ -153,8 +160,8 @@ body.portfolio{font-family: 'LibreBaskervilleItalic', Serif; font-size:14px; let
 #main>header>.video>#youtube>.close>a{display:block; opacity:1; width:40px; height:40px; background:asset-url("close@2x.png") no-repeat center; background-color:#f7505a; background-size:40px;}
 #main>header>.video{width:100%; height:500px; background:asset-url("bg-video.jpg") no-repeat center top; background-size:cover; color:#FFF; }
 #main>header>.video>.description{width:700px; margin-top:-185px; margin-left:-350px; text-align:center;}
-#main>header>.video>.description>h1{font-size:118px; line-height:118px; margin:0px 0px 0px 0px; letter-spacing:0.12em;color:#fff; font-family: 'proxima_nova_rgbold','Times New Roman', Arial, Helvetica, sans-serif;}
-#main>header>.video>.description>h2{font-size:36px;line-height:35px;  margin:15px 0px 0px 0px; letter-spacing:0.12em; -webkit-font-smoothing: antialiased;color: #fff;}
+#main>header>.video>.description>h1{font-size:118px; line-height:118px; margin:0px 0px 1vw 0px; letter-spacing:0.12em;color:#fff; font-family: 'proxima_nova_rgbold','Times New Roman', Arial, Helvetica, sans-serif;}
+#main>header>.video>.description>h2{font-size:36px;line-height:35px;  margin:15px 0px 1vw 0px; letter-spacing:0.12em; -webkit-font-smoothing: antialiased;color: #fff;}
 #main>header>.video>.description>.play{text-decoration:none; color:#FFF; display:block; height:70px; width:650px; margin:40px auto 40px auto; background:#f7505a;}
 #main>header>.video>.description>.play>.playIco{ display:block; width:70px; height:70px; background:asset-url('play-ico.png') center no-repeat; border-left:solid 1px #fc7980;}
 #main>header>.video>.description>.play>.cta{ width:578px; font-size:16px; text-transform:uppercase; line-height:72px; letter-spacing:0.25em;-webkit-font-smoothing: antialiased;}
@@ -400,7 +407,7 @@ iframe{ overflow:hidden;}
 
 	main>header>.video>.description{width:500px; margin-top:-150px; margin-left:-250px; text-align:center;}
 	#main>header>.video>.description>h1{font-size:90px; line-height:90px; margin:0px 0px 0px 0px; letter-spacing:0.12em;}
-	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 0px 0px; letter-spacing:0.08em}
+	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 1vw 0px; letter-spacing:0.08em}
 	#main>header>.video>.description>.play{text-decoration:none; color:#FFF; display:block; height:70px; width:480px; margin:20px auto 20px auto;}
 	#main>header>.video>.description>.play>.playIco{ display:block; width:70px; height:70px; background:asset-url("play-ico.png") center no-repeat;}
 	#main>header>.video>.description>.play>.cta{ width:408px; font-size:12px;}
@@ -442,7 +449,7 @@ iframe{ overflow:hidden;}
 	#main>header>.logo{height:78px; width:227px; background:asset-url("el8le-logo.png") no-repeat; background-size:contain; margin:15px auto 15px auto;}
 	#main>header>.video>.description{width:500px; margin-top:-150px; margin-left:-250px; text-align:center;}
 	#main>header>.video>.description>h1{font-size:90px; line-height:90px; margin:0px 0px 0px 0px; letter-spacing:0.12em;}
-	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 0px 0px; letter-spacing:0.08em}
+	#main>header>.video>.description>h2{font-size:29px;line-height:29px;  margin:0px 0px 1vw 0px; letter-spacing:0.08em}
 	#main>header>.video>.description>.play{text-decoration:none; color:#FFF; display:block; height:70px; width:480px; margin:20px auto 20px auto;}
 	#main>header>.video>.description>.play>.playIco{ display:block; width:70px; height:70px; background:asset-url("play-ico.png") center no-repeat; border-right:solid 1px #f86c6f;}
 	#main>header>.video>.description>.play>.cta{ width:408px; font-size:12px;}

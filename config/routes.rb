@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get 'simplegrid', to: 'simplegrid#index', as: 'simplegrid'
   get 'resume', to: 'resume#index', as: 'resume'
   get 'v', to: 'v#index', as: 'v'
-  root 'page#index'
+  root 'portfolio#index'
 end

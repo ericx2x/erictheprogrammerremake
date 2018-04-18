@@ -28,7 +28,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="<%= 'active' if params[:controller] == 'page' %>"><%= link_to 'Home', root_path, data: { no_turbolink: true } %></li>
+              <!--li class="<%#= 'active' if params[:controller] == 'page' %>"><%#= link_to 'Home', root_path, data: { no_turbolink: true } %></li-->
               <li class="<%= 'active' if params[:controller] == 'posts' %>"><%= link_to 'Projects', posts_path %></li>
               <li class="<%= 'active' if params[:controller] == 'portfolio' %>"><%= link_to 'Portfolio', portfolio_path, data: { no_turbolink: true } %></li>
               <li><%= link_to 'Resume', resume_path, target: "_blank" %></li>
