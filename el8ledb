@@ -1,0 +1,242 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.5.3
+-- Dumped by pg_dump version 9.5.3
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: posts; Type: TABLE; Schema: public; Owner: rails
+--
+
+CREATE TABLE posts (
+    id integer NOT NULL,
+    user_id integer,
+    title character varying,
+    content text,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    image character varying
+);
+
+
+ALTER TABLE posts OWNER TO rails;
+
+--
+-- Name: posts_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
+--
+
+CREATE SEQUENCE posts_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE posts_id_seq OWNER TO rails;
+
+--
+-- Name: posts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
+--
+
+ALTER SEQUENCE posts_id_seq OWNED BY posts.id;
+
+
+--
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: rails
+--
+
+CREATE TABLE schema_migrations (
+    version character varying NOT NULL
+);
+
+
+ALTER TABLE schema_migrations OWNER TO rails;
+
+--
+-- Name: users; Type: TABLE; Schema: public; Owner: rails
+--
+
+CREATE TABLE users (
+    id integer NOT NULL,
+    first_name character varying,
+    last_name character varying,
+    email character varying,
+    password_digest character varying,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE users OWNER TO rails;
+
+--
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
+--
+
+CREATE SEQUENCE users_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE users_id_seq OWNER TO rails;
+
+--
+-- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
+--
+
+ALTER SEQUENCE users_id_seq OWNED BY users.id;
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: rails
+--
+
+ALTER TABLE ONLY posts ALTER COLUMN id SET DEFAULT nextval('posts_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: rails
+--
+
+ALTER TABLE ONLY users ALTER COLUMN id SET DEFAULT nextval('users_id_seq'::regclass);
+
+
+--
+-- Data for Name: posts; Type: TABLE DATA; Schema: public; Owner: rails
+--
+
+COPY posts (id, user_id, title, content, created_at, updated_at, image) FROM stdin;
+7	1	133 West 52nd Street	<div class="eric__portpost-container">\r\n          <p>As a part of a small team&nbsp;at <a href="http://neoscape.com">Neoscape</a>&nbsp;I helped write the front end code for this promotional site for MRP Realty at 133 West 52nd Street New York, NY. My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>SVG animation, scripting and interaction design</li> \r\n  <li>PHP templating</li> \r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://133west52nd.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/mrp-desk-7dad45c9c0074c6e4f0e5fa08ca9b0a9508bc202c6d3615351444ae5e9ed1a8b.gif" alt="Mrp desk 7dad45c9c0074c6e4f0e5fa08ca9b0a9508bc202c6d3615351444ae5e9ed1a8b">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/mrp-phone-c802cad748bfa925bf258339f7655ece26bb3bd7a5accb8be4db30259931731b.gif" alt="Mrp phone c802cad748bfa925bf258339f7655ece26bb3bd7a5accb8be4db30259931731b">\r\n\r\n</div>	2016-10-17 21:34:46.973949	2016-12-10 23:38:28.502314	portsubicons/mrp.png
+8	1	Longfellow	<div class="eric__portpost-container">\r\n          <p>A site for a word-class real estate agency creating business in the Montana area. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>PHP templating</li> \r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://lfrep.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/longfellow-desk-fa78d22a813911dee0ae775aef2e8c57984819240d70c03bde0173204991bac6.gif" alt="Longfellow Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/longfellow-phone-3dbbfc574a70b9bd265e50c4e892df564bba4912188bdf3f831adf864e011fb8.gif" alt="Longfellow Phone">\r\n\r\n</div>	2016-10-25 01:30:42.476006	2016-12-10 23:38:42.505489	portsubicons/longfellow.png
+11	1	Paramount 31 West 52nd 	<div class="eric__portpost-container">\r\n          <p>A website developed for Paramount3. This site involves their 31w52nd building. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>Excessive PHP templating</li> \r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://31w52nd.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/31w52nd-desk-b1349a815e528e2ffdc583d92d7541a0b492863e514ae3d2446d481c9c82dce1.gif" alt="31w52nd Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/31w52nd-phone-002ebb03b97f45bf7793626284ef8752d92c631cebf7bf21494403c3e8a76647.gif" alt="31w52nd Phone">\r\n\r\n</div>	2016-10-25 01:49:00.748881	2016-12-10 23:39:08.881476	portsubicons/31w52nd.png
+13	1	Paramount - 1325 AoA	<div class="eric__portpost-container">\r\n          <p>A website developed for Paramount3. This site involves their 1325aoa building. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>Excessive PHP templating</li> \r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://1325aoa.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/1325aoa-desk-014ffc085ec85315f1d003caa912ccf9a879c07d5ec6110d99adc76e6c648a2b.gif" alt="1325aoa Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/1325aoa-phone-405696f34372d79a5001547e0b2c770d6e800afb075541fcf0f091b0d5d90d8e.gif" alt="1325aoa Phone">\r\n\r\n</div>	2016-10-25 01:58:29.408014	2016-12-10 23:39:20.994406	portsubicons/1325aoa.png
+14	1	MIT - One Broadway	<div class="eric__portpost-container">\r\n          <p>Kendall Square is a new high tech hub vetted by MIT and Harvard. This site features their new hub. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://mitonebroadway.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/mit-desk-d6dd8b3139a2879d75d71e71f3823e260b9207f44640aefa1bdfc925452ca30b.gif" alt="mit Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/mit-phone-c50d10c9fd546576f1f291cb0d9691a9fdbb02860e608348447f669349073d76.gif" alt="mit Phone">\r\n\r\n</div>	2016-10-25 02:01:06.528046	2016-12-10 23:39:54.072448	portsubicons/mit.png
+9	1	The Ritz Carlton - North Hills	<div class="eric__portpost-container">\r\n          <p>A website developed for The Ritz Carlton featuring a hotel property in North Hills, New York. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>PHP templating</li> \r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://theresidenceslongisland.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/rxr-desk-4b442f331db40f996f16b7e681c7ea37ed295752823d17379b3da4eabfaf8bdd.gif" alt="Rxr Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/rxr-phone-37aa4e67b90e28a21770f8a18a1e7b44320509f605f003e6c0c209a9cc8c3522.gif" alt="Rxr Phone">\r\n\r\n</div>	2016-10-25 01:33:55.085357	2016-12-10 23:38:54.804373	portsubicons/rxr.png
+12	1	Beatty Development - Harbor Point	<div class="eric__portpost-container">\r\n          <p>A Baltimore site featuring Harbor Point, a thriving business hub, brimming with ideas. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>Wordpress</li>\r\n  <li>PHP templating</li> \r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://harborpointbaltimore.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/beatty-desk-803cec5bf3231e2f994e7d1e80628b498dde6b75dbac03da10e605eba59d1546.gif" alt="harborpointbaltimore Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/beatty-phone-95ed01894605e1f24886b868baa0e4cac1f33dddd61b5a964ce2324d3b9280e8.gif" alt="harborpointbaltimore Phone">\r\n\r\n</div>	2016-10-25 01:54:28.949068	2016-12-10 23:39:45.923481	portsubicons/beatty.png
+10	1	Hines Victory Center Dallas	<div class="eric__portpost-container">\r\n          <p>A website featuring Hines Victory Center, a building in Dallas. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>PHP templating</li> \r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://victorycenterdallas.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/hines-desk-da726038bf9cd2ececf995fd1e5115f2fd2f4d647a66dbadefb69395e44ee8e0.gif" alt="Hines Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/hines-phone-b6567a4623b10c8b2875d005bd6253f97ddd06f20fb090e1201e05d88d39e27e.gif" alt="Hines Phone">\r\n\r\n</div>	2016-10-25 01:40:13.532272	2016-12-10 23:37:38.936042	portsubicons/hvc.png
+15	1	Paramount - Zero Bond	<div class="eric__portpost-container">\r\n          <p>A website developed for Paramount3. This site involves their 0bond building. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>JavaScript Development</li>\r\n  <li>Excessive PHP templating</li>\r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://0bond.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/zerobond-desk-c70387f3800767e37c571971e95c7b188ba64c82dcd85e0acafc4992e4d2cdc8.gif" alt="0bond Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/zerobond-phone-0b7ffbeec8e8d687a6ba1fcb002aa7d1a0c4526abc2f46523df4e0fc810d632d.gif" alt="0bond Phone">\r\n\r\n</div>	2016-10-25 02:04:18.636052	2016-12-10 23:40:09.058926	portsubicons/zerobond.png
+16	1	Seaport Square	<div class="eric__portpost-container">\r\n          <p>A temp site featuring Seaport Square in Boston for a client named WS Development developed while working under Neoscape. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>CSS developement</li>\r\n  <li>Responsive Development</li>\r\n  <li>Site deployment</li>\r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://seaportsquare.com">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/seaport-desk-721f7e99fcb7a92d337c6de88863c0921713a25720bd167a9f1a0b3bb60a3592.gif" alt="Seaport Desk">\r\n\r\n  <img class="eric__gifphone" src="/assets/portgifs/seaport-phone-6a3511a0c46eeec0953eb0d0e7e18d9d83aff6940f865d96574824d162994fa8.gif" alt="Seaport Phone">\r\n\r\n</div>	2016-10-25 02:06:40.154792	2016-12-10 23:40:22.108411	portsubicons/s.png
+17	1	American Society of Architectural Illustrators	<div class="eric__portpost-container">\r\n          <p>Co-worked on a wordpress site for American Society of Architectural Illustrators. Moved the backed of their previous site onto a wordpress site. Developed under <a href="http://neoscape.com">Neoscape</a>&nbsp; My responsibilities included:</p>\r\n\r\n<ul>\r\n  <li>MSQL DB Migration</li>\r\n  <li>Wordpress</li>\r\n  <li>PHP templating</li> \r\n</ul>\r\n\r\n  <p><a class="action" target="_blank" href="http://asai.org">Launch Project</a></p>\r\n\r\n<p>Screen Grabs:</p>\r\n  <img class="eric__gifdesk" src="/assets/portgifs/asai-desk-ce7bab19113bec3e96334ddc9d9e4608ec191eaef99cec05efaa71014e6aa25a.gif" alt="Hines Desk">\r\n\r\n</div>	2016-10-25 02:12:21.418689	2016-12-10 23:40:35.096195	portsubicons/asai.png
+\.
+
+
+--
+-- Name: posts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rails
+--
+
+SELECT pg_catalog.setval('posts_id_seq', 17, true);
+
+
+--
+-- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: rails
+--
+
+COPY schema_migrations (version) FROM stdin;
+20151030175926
+20151116194130
+20161210232637
+\.
+
+
+--
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: rails
+--
+
+COPY users (id, first_name, last_name, email, password_digest, created_at, updated_at) FROM stdin;
+1	Eric	Lima	ericjlima@gmail.com	$2a$10$.eiDo3ffttor0w1KZ/.o2.wSQ9zu8HeGWZUZbNiAyuObeaWc8tCz.	2016-07-26 12:43:50.581614	2016-07-26 12:43:50.581614
+2	Mike	Karolow	mike@yesware.com	$2a$10$WyJTxD0k8RBzfswfXrS53e.pAVbgBHldpK.xnIMb4eHAZmHWAQ7Sm	2017-03-01 17:59:49.161118	2017-03-01 17:59:49.161118
+\.
+
+
+--
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rails
+--
+
+SELECT pg_catalog.setval('users_id_seq', 2, true);
+
+
+--
+-- Name: posts_pkey; Type: CONSTRAINT; Schema: public; Owner: rails
+--
+
+ALTER TABLE ONLY posts
+    ADD CONSTRAINT posts_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: users_pkey; Type: CONSTRAINT; Schema: public; Owner: rails
+--
+
+ALTER TABLE ONLY users
+    ADD CONSTRAINT users_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: index_posts_on_user_id; Type: INDEX; Schema: public; Owner: rails
+--
+
+CREATE INDEX index_posts_on_user_id ON posts USING btree (user_id);
+
+
+--
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: rails
+--
+
+CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
+
+
+--
+-- Name: fk_rails_5b5ddfd518; Type: FK CONSTRAINT; Schema: public; Owner: rails
+--
+
+ALTER TABLE ONLY posts
+    ADD CONSTRAINT fk_rails_5b5ddfd518 FOREIGN KEY (user_id) REFERENCES users(id);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.files = ["CHANGELOG.md", "LICENSE", "README.md"]
   s.homepage = "https://github.com/ai/autoprefixer-rails"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.5.1"
+  s.rubygems_version = "2.5.2.1"
   s.summary = "Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website."
 
-  s.installed_by_version = "2.5.1" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.5.2.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

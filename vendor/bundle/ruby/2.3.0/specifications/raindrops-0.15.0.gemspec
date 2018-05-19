@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.files = ["LICENSE", "NEWS", "README", "ext/raindrops/extconf.rb", "ext/raindrops/linux_inet_diag.c", "ext/raindrops/linux_tcp_info.c", "ext/raindrops/raindrops.c", "lib/raindrops.rb", "lib/raindrops/aggregate.rb", "lib/raindrops/aggregate/last_data_recv.rb", "lib/raindrops/aggregate/pmq.rb", "lib/raindrops/last_data_recv.rb", "lib/raindrops/linux.rb", "lib/raindrops/middleware.rb", "lib/raindrops/middleware/proxy.rb", "lib/raindrops/struct.rb", "lib/raindrops/watcher.rb"]
   s.homepage = "http://raindrops.bogomips.org/"
   s.licenses = ["LGPL-2.1+"]
-  s.rubygems_version = "2.5.1"
+  s.rubygems_version = "2.5.2.1"
   s.summary = "real-time stats for preforking Rack servers"
 
-  s.installed_by_version = "2.5.1" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.5.2.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

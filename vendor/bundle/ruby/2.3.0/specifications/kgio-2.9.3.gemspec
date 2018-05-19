@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.files = ["HACKING", "ISSUES", "LATEST", "LICENSE", "NEWS", "README", "TODO", "ext/kgio/accept.c", "ext/kgio/autopush.c", "ext/kgio/connect.c", "ext/kgio/extconf.rb", "ext/kgio/kgio_ext.c", "ext/kgio/poll.c", "ext/kgio/tryopen.c", "ext/kgio/wait.c", "lib/kgio.rb"]
   s.homepage = "http://bogomips.org/kgio/"
   s.licenses = ["LGPL-2.1+"]
-  s.rubygems_version = "2.5.1"
+  s.rubygems_version = "2.5.2.1"
   s.summary = "kinder, gentler I/O for Ruby"
 
-  s.installed_by_version = "2.5.1" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.5.2.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

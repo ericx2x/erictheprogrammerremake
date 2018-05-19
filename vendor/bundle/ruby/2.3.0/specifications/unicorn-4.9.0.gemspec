@@ -18,10 +18,10 @@ Gem::Specification.new do |s|
   s.files = ["Application_Timeouts", "CONTRIBUTORS", "DESIGN", "FAQ", "HACKING", "ISSUES", "KNOWN_ISSUES", "LATEST", "LICENSE", "Links", "NEWS", "PHILOSOPHY", "README", "SIGNALS", "Sandbox", "TODO", "TUNING", "bin/unicorn", "bin/unicorn_rails", "ext/unicorn_http/extconf.rb", "lib/unicorn.rb", "lib/unicorn/configurator.rb", "lib/unicorn/http_server.rb", "lib/unicorn/oob_gc.rb", "lib/unicorn/preread_input.rb", "lib/unicorn/stream_input.rb", "lib/unicorn/tee_input.rb", "lib/unicorn/util.rb", "lib/unicorn/worker.rb", "unicorn_1", "unicorn_rails_1"]
   s.homepage = "http://unicorn.bogomips.org/"
   s.licenses = ["GPLv2+", "Ruby 1.8"]
-  s.rubygems_version = "2.5.1"
+  s.rubygems_version = "2.5.2.1"
   s.summary = "Rack HTTP server for fast clients and Unix"
 
-  s.installed_by_version = "2.5.1" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.5.2.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
